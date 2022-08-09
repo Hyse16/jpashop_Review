@@ -48,6 +48,7 @@ public class OrderSimpleApiController {
                 .map(o -> new SimpleOrderDto(o))
                 .collect(Collectors.toList());
         return result;
+
     }
     @GetMapping("api/v4/simple-orders")
     public List<OrderSimpleQueryDto> ordersV4() {
